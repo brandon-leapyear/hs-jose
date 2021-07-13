@@ -3,6 +3,7 @@
 
 # Specifies the GHC version and set of packages available (e.g., lts-3.5, nightly-2015-09-21, ghc-7.10.2)
 resolver: lts-18.0
+compiler: ghc-9.0.1
 
 # Local packages, usually specified by relative directory name
 packages:
@@ -10,6 +11,8 @@ packages:
 
 # Packages to be pulled from upstream that are not in the resolver (e.g., acme-missiles-0.3)
 extra-deps:
+  - memory-0.16.0
+  - lens-5.0.1
 
 # Override default flag values for local packages and extra-deps
 flags: {}
